@@ -679,7 +679,6 @@ nav ul li:nth-of-type(5) a:hover {
 /* ------------------------------------------------------------ */
 /* Admssion scetion */
 .container section:nth-of-type(4) {
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1334,10 +1333,10 @@ footer {
 
 /* ----------------------------------------------------------- */
 .ahkamboh{
-  text-decoration: underline 1px rgb(0, 0, 0) solid;
+  text-decoration: none 1px rgb(2, 3, 3) solid;
 }
 .ahkamboh:hover{
-  text-decoration: underline 1px rgb(255, 255, 255) solid;
+  text-decoration: underline 1px rgb(242, 242, 245) solid;
 }
 
 /* Responsive design For mini screen  */
