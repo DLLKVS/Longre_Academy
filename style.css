@@ -1448,10 +1448,10 @@ footer {
     box-shadow: 0px 26px 43px -3px rgba(0, 0, 0, 0.31);
     -webkit-box-shadow: 0px 26px 43px -3px rgba(0, 0, 0, 0.31);
     -moz-box-shadow: 0px 26px 43px -3px rgba(0, 0, 0, 0.31);
-    width: 100%;
-    height: 12em;
+    width: 50%;
+    height: 6em;
     top: -300%;
-    left: 0;
+    right: 0;
     position: absolute;
     padding: 24px;
     text-align: center;
@@ -1472,12 +1472,12 @@ footer {
     top: 9px;
   }
 
-  /* page formation 
-   */
+  /* page formation */
+   
   .container section {
-    padding-top: 120px;
+    padding-top: 0px;
 
-  }
+  } 
 
   /* Home page   */
   .Home:nth-child(2) {
@@ -1691,11 +1691,11 @@ footer {
   }
 
   .container section:nth-of-type(2) {
-    padding-top: 5%;
+    padding-top: 0%;
   }
 
   .container section:nth-of-type(3) {
-    padding-top: 5%;
+    padding-top: 0%;
   }
 
   .container section:nth-of-type(4) {
