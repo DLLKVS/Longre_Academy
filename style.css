@@ -698,20 +698,22 @@ nav ul li:nth-of-type(5) a:hover {
 
 .container section:nth-of-type(4) .program-header .p-head {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 100%;
   font-size: 1.5em;
+  margin-left: 10px;
+  color: #811c85;
 }
 
 .container section:nth-of-type(4) .program-header .p-head:first-child {
-  padding-left: 3%;
+  padding-left: 0%;
 }
 
 .container section:nth-of-type(4) .program-header .p-head p {
   width: 80%;
   font-size: .6em;
-  color: #879096;
+  color: #537d99;
 }
 
 .Admissions-Button,
@@ -1528,7 +1530,6 @@ footer {
 
   .container section:nth-of-type(3) {
     flex-direction: column-reverse;
-    border-top: 10px solid var(--bg-main-4);
   }
 
 }
@@ -1643,7 +1644,7 @@ footer {
   }
 
   .container section:nth-of-type(4) .program-header .p-head h1 {
-    padding-top: 15px;
+    padding-top: 8px;
     font-size: 1em;
   }
 
@@ -1700,7 +1701,7 @@ footer {
   }
 
   .container section:nth-of-type(4) {
-    padding-top: 5%;
+    padding: 0;
   }
 
   .container section:nth-of-type(5) {
