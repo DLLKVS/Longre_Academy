@@ -20,9 +20,9 @@
 :root {
 
  
-  --bg-main-1: #6098b3;
-  --bg-main-2: #4a6b7b;
-  --bg-main-3: #cbffff;
+  --bg-main-1: #5189a3;
+  --bg-main-2: #5588a1;
+  --bg-main-3: #a7dbf3;
   --bg-main-4: #f1faf8;
 
 
@@ -197,7 +197,7 @@ nav {
 
 nav .lsa span {
   transition: all 1s;
-  color: rgb(156, 55, 143);
+  color: rgb(151, 19, 134);
   position: absolute;
   top: -25px;
   left: 0px;
@@ -222,7 +222,7 @@ nav .lsa span:hover {
   transition: all 1s;
   position: absolute;
   font-size: 12.5PX;
-  color: rgb(156, 55, 143);
+  color: rgb(151,19,134);
   text-transform: uppercase;
   letter-spacing: .1px;
   top: 41PX;
@@ -336,7 +336,7 @@ nav ul li:nth-of-type(5) a:hover {
 
 .container section:first-of-type {
   padding-top: 0px;
-  background-image: url(bg.png);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/006/741/360/original/square-banner-with-colorful-english-letters-fly-on-white-background-with-place-for-text-modern-hand-drawn-design-illustration-vector.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -723,7 +723,7 @@ nav ul li:nth-of-type(5) a:hover {
   padding-right: 10%;
   gap: 30px;
   flex-wrap: wrap;
-  color: #000000;
+  color: #0a0909;
 }
 
 .Admissions-Content {
@@ -740,6 +740,7 @@ nav ul li:nth-of-type(5) a:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 15px;
 
 }
 
@@ -1160,6 +1161,7 @@ select {
 
 .Quote img {
   width: 200px;
+  border-radius: 15px;
 }
 
 .Quote::after {
