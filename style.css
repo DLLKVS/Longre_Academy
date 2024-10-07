@@ -81,7 +81,7 @@ h3 {
 }
 
 body {
-  min-width: 150px;
+  min-width: 120px;
   width: 0vw;
   height: 0vh;
   background-color: var(--bg-main-2);
@@ -1576,7 +1576,7 @@ footer {
   }
 
   .Home:nth-child(2) .Home-text {
-    padding: 20px;
+    padding: 7px;
     height: 100%;
     transform: scale(1);
   }
