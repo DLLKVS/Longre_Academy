@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 :root {
 
  
@@ -197,7 +201,7 @@ nav {
 
 nav .lsa span {
   transition: all 1s;
-  color: rgb(151, 19, 134);
+  color: rgb(15, 14, 15);
   position: absolute;
   top: -25px;
   left: 0px;
@@ -222,7 +226,7 @@ nav .lsa span:hover {
   transition: all 1s;
   position: absolute;
   font-size: 12.5PX;
-  color: rgb(151,19,134);
+  color: rgb(11, 11, 11);
   text-transform: uppercase;
   letter-spacing: .1px;
   top: 41PX;
@@ -336,7 +340,7 @@ nav ul li:nth-of-type(5) a:hover {
 
 .container section:first-of-type {
   padding-top: 0px;
-  background-image: url(https://static.vecteezy.com/system/resources/previews/006/741/360/original/square-banner-with-colorful-english-letters-fly-on-white-background-with-place-for-text-modern-hand-drawn-design-illustration-vector.jpg);
+  background-image: url(https://assets.isu.pub/document-structure/240315184122-b77fad92a0dc61b39c1521ee7af9b9c6/v1/c5183d6dc950ce2714b20fb29729c119.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -419,6 +423,11 @@ nav ul li:nth-of-type(5) a:hover {
   font-size: 3em;
   line-height: 60px;
 }
+
+h1 {
+  padding-top: 10px;
+}
+
 
 .Home:nth-child(2) .Home-text p {
   color: var(--bg-main-1);
@@ -765,7 +774,7 @@ nav ul li:nth-of-type(5) a:hover {
   gap: 10px;
   width: 100%;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   position: relative;
 
@@ -845,6 +854,11 @@ nav ul li:nth-of-type(5) a:hover {
   font-size: 0.9em;
 
 }
+
+input.input {
+  height: 35px;
+}
+
 
 select {
   width: 100%;
@@ -1444,6 +1458,9 @@ footer {
     transition: .7s ease;
   }
 
+  ul.navdisplay {
+    border-radius: 10px;
+}
   nav ul {
     display: block;
     transition: .7s;
@@ -1507,7 +1524,6 @@ footer {
   .Home:nth-child(2) .Home-text p {
     width: 100%;
   }
-
   .Home:nth-child(2) .Home-text h1 b {
     right: 10px;
     bottom: 17px;
