@@ -63,8 +63,13 @@ window.fbAsyncInit = function () {
   fjs.parentNode.insertBefore(js, fjs);
 })(document, "script", "facebook-jssdk");
 
-classgenadmisson = () => {
+HomeTu = () => {
   let formdisplay = document.getElementById("form-display");
+  formdisplay.classList.toggle("form-display-done");
+};
+
+ParentAdd = () => {
+  let formdisplay = document.getElementById("form-screening");
   formdisplay.classList.toggle("form-display-done");
 };
 
