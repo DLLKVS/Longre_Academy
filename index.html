@@ -92,10 +92,10 @@
             <div class="Home">
                 <div class="Home-text">
                     <h1 title="Join Our Acadmey Now"><b>Join Us For</b><br></h1>
-                    <p><h2 style="color: rgb(97, 30, 160); border: 2px;"><b>English Spoken</b></h2><b>Spoken/Written/School/Competition</b></p>
-                    <P><h2 style="color:rgb(224, 56, 182);"><b>Commerce 11<sup>th</sup>-12<sup>th </b></sup></h2><b>Eco/Acc/Maths</b></P>
-                    <p><h2 style="color: brown;"><b>Home Tuition 1<sup>st</sup> to 12<sup>th</sup></b></h2><b>( All Subjects )</b>
-                    </p><br>
+                    <i><p><h2><a href="EnglishSpoken.html" target="_blank" style="color: blueviolet; font-size: 45px;">Spoken English</a></h2><h3 style="border: 2px solid black; font-size: 25px;">Spoken/Written/School/Competition</h3></p>
+                    <P><h2><a href="Commerce 11th-12th.html" target="_blank" style="color: rgb(252, 10, 219); font-size: 45px;">Commerce 11<sup>th</sup>-12<sup>th </b></sup></a></h2><h3 style="border: 2px solid black; font-size: 25px;">Eco/Acc/Maths</h3></P>
+                    <p><h2><a href="Home tuition 1st to 12th.html" target="_blank" style="color: brown; font-size: 45px;">Home Tuition 1<sup>st</sup> to 12<sup>th</sup></a></h2><h3 style="border: 2px solid black; font-size: 25px;"> All Subjects </h3>
+                    </p></i>
                     <p><h1 style="font-style: italic;">About Us</h1>
                         Ranjeet Longre is Postgraduate in English Literature From Delhi University. Our Aim is to Make Education Practical, Enjoyable And More Relatable For All The Classes.</p>
                     <a href="#Programs"> <button class="learn-more" title="Learn More About us just Click">
@@ -105,7 +105,7 @@
                             <span class="button-text">Learn More</span>
                         </button></a>
 
-                </div>
+                </i>
             </div>
             <!-- Scroll buttons  -->
             <div class="arrows">
@@ -135,15 +135,15 @@
             </div>
             <span class="title ad-title"> Click and Apply Now</span>
             <div class="Admissions-Button Admission">
-                <div class="buttons" onclick="classgenadmisson()">
+                <div class="buttons" onclick="OnlineAdd()">
                     <img src="Entry-Tests-Preparation.svg" alt="Entry-Tests-Preparation">
-                    <h4>Online English Test (Objective type)</h4>
+                    <h4>Online English Test(Objective)</h4>
                 </div>
-                <div class="buttons" onclick="classgenadmisson()"><img src="Evening-Coaching.svg"
+                <div class="buttons" onclick="ParentAdd()"><img src="Evening-Coaching.svg"
                         alt="Evening-Coaching">
                     <h4>Home Tutor For your kids(1st to 12st)</h4>
                 </div>
-                <div class="buttons" onclick="classgenadmisson()"><img src="Foreign-Tests-Preparation.svg"
+                <div class="buttons" onclick="HomeTu()"><img src="Foreign-Tests-Preparation.svg"
                         alt="Foreign-Tests-Preparation">
                     <h4>Register as Home Totur</h4>
                 </div>
@@ -152,52 +152,147 @@
                 <p></p>
             </div>
             <!-- Admission-form that display after click on Admissions-Button -->
-            <div class="Admission-form" id="form-display">
+
+            <!--form 2 -->
+            <div class="Admission-form" id="form-screening"> 
                 <form class="form">
-                    <div class="cross" onclick="classgenadmisson()">&#10006;</div>
+                    <div class="cross" onclick="ParentAdd()">&#10006;</div>
                     <p class="title">Register </p>
                     <p class="message">
                         Join us today and seize the opportunity.</p>
                     <div class="flex">
                         <label>
-                            <input required="" placeholder="" type="text" class="input">
+                            <input required placeholder="" type="text" class="input">
                             <span>Your Name</span>
                         </label>
 
                         <label>
-                            <input required="" placeholder="" type="text" class="input">
+                            <input required placeholder="" type="text" class="input">
                             <span>Father Name</span>
                         </label>
-
-
                     </div>
-
                     <label>
-                        <input required="" placeholder="" type="number" class="input">
-                        <span>#</span>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Class & Subjects</span>
+                    </label>
+                    <label>
+                        <input required placeholder="" type="number" class="input">
+                            <span>Phone 1 Number</span>
+                        </label>
+                        <label>
+                            <input required placeholder="" type="number" class="input">
+                            <span>phone 2 Number</span>
+                        </label>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Current Address</span>
                     </label>
 
                     <label>
-                        <input required="" placeholder="" type="password" class="input">
+                        <input required placeholder="" type="address" class="input">
+                        <span>Permanent Address</span>
+                    </label>
+                    <!-- Type selction field  -->
+                   
+                    <p>Reference ( Known Person ) :</p>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Person Name</span>
+                    </label>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Person Number</span>
+                    </label>
+                    <p>
+                        <Input type="checkbox"> By Filling This Form I Concionsly Agree to All The Term And Conditions of The Academy.</Input>
+                    </p>
+
+                    <button class="submit" id="submitBtn">Apply in</button>
+                    <p class="signin">Already have an acount ? <a onchange="formtext()">Signin</a> </p>
+                </form>
+            </div>
+               <!--3rd one form-->
+            <div class="Admission-form" id="form-display"> 
+                <form class="form">
+                    <div class="cross" onclick="HomeTu()">&#10006;</div>
+                    <p class="title">Register </p>
+                    <p class="message">
+                        Join us today and seize the opportunity.</p>
+                    <div class="flex">
+                        <label>
+                            <input required placeholder="" type="text" class="input">
+                            <span>Your Name</span>
+                        </label>
+
+                        <label>
+                            <input required placeholder="" type="text" class="input">
+                            <span>Father Name</span>
+                        </label>
+                    </div>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Teaching Experience</span>
+                    </label>
+                    <label>
+                        <input required placeholder="" type="number" class="input">
+                            <span>Phone 1 Number</span>
+                        </label>
+                        <label>
+                            <input required placeholder="" type="number" class="input">
+                            <span>phone 2 Number</span>
+                        </label>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Current Address</span>
+                    </label>
+
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Permanent Address</span>
+                    </label>
+
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Education Qualification</span>
+                    </label>
+
+                    <label>
+                        <input required placeholder="" type="email" class="input">
                         <span>Email</span>
-                    </label>
-                    <label>
-                        <input required="" placeholder="" type="password" class="input">
-                        <span>Phone no</span>
                     </label>
                     <!-- Type selction field  -->
                     <select id="Form-type-selection" onchange="formtext()">
-                        <option value="">Evening-Coaching</option>
+                        <option value="">Class You Teach</option>
                         <option value="9th/10th">9th/10th</option>
                         <option value="11th/12th">11th/12th</option>
-                        <option value="">Entry Test</option>
                         <option value="MDCAT">7th/8th</option>
                         <option value="ECAT">6th/5th</option>
-                        <option value="LCAT">Arts</option>
-                        <option value="NUMS">#</option>
-                        <option value="">#</option>
-                        <option value="SAT">#</option>
+                        <option value="LCAT">1st/4th</option>
+                        <option value="NUMS">Commerce</option>
+                        <option value="">Arts</option>
+                        <option value="SAT">Science</option>
                     </select>
+                     
+                    <select id="Form-type-selection" onchange="formtext()">
+                        <option value="">Area You Teach</option>
+                        <option value="Krishna Park">Krishna Park</option>
+                        <option value="#">#</option>
+                        <option value="#">#</option>
+                        <option value="#">#</option>
+                    </select>
+                    <p>Reference ( Known Person ) :</p>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Person Name</span>
+                    </label>
+                    <label>
+                        <input required placeholder="" type="text" class="input">
+                        <span>Person Number</span>
+                    </label>
+                    <p>
+                        <Input type="checkbox"> By Filling This Form I Concionsly Agree to All The Term And Conditions of The Academy.</Input>
+                    </p>
+
                     <button class="submit" id="submitBtn">Apply in</button>
                     <p class="signin">Already have an acount ? <a onchange="formtext()">Signin</a> </p>
                 </form>
