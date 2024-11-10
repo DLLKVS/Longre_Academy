@@ -35,17 +35,17 @@ admission.classList.remove('white');
         home.classList.remove('white');
       contact.classList.remove('white');
         }
-// sroll button
+
 scrollWin = (x, y) => {
   let content = document.getElementById("content");
   content.scrollBy(x, y);
 };
 
-// Chat Message
+
 var chatbox = document.getElementById("fb-customer-chat");
 chatbox.setAttribute("page_id", "101421454944610");
 chatbox.setAttribute("attribution", "biz_inbox");
-//  SDK Code / chat message
+
 window.fbAsyncInit = function () {
   FB.init({
     xfbml: true,
@@ -73,7 +73,7 @@ ParentAdd = () => {
   formdisplay.classList.toggle("form-display-done");
 };
 
-// Submit btn inner text changer in admission form in admission section
+
 formtext = () => {
   let textselect = document.getElementById("Form-type-selection");
   let submitBtn = document.getElementById("submitBtn");
