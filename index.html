@@ -15,13 +15,13 @@
     <meta property="og:description"
         content="An investment in knowledge pays the best interest." />
     <title>Welcome!-Longre English Acadmey</title>
-    <!-- icon from Fontawesome -->
+    
     <script src="https://kit.fontawesome.com/964aa041f9.js" crossorigin="anonymous"></script>
-    <!-- Css  -->
+   
     <link rel="stylesheet" href="style.css">
-    <!-- Tab bar icon  -->
+   
     <link rel="icon" type="image/png" href="image.png" />
-    <!-- Fonts -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <!-- loader  -->
+   
     <div class="loader">
         <div class="spinner">
             <div></div>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <!-- Hearder -->
+   
     <header>
         <nav>
             <div class="bar">
@@ -60,7 +60,7 @@
                         <li><a href="#Contact" title="Contact us" id="contact" onclick="Contbtn()" >Contact us</a></li>
                     </ul>
                 </div>
-                <!-- Hamburger Menu  -->
+               
                 <div onclick="classgen(this)" class="mainbar" id="mainbar">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -69,9 +69,9 @@
             </div>
         </nav>
     </header>
-    <!-- --------------------------------------------------------------------- -->
+    
     <div class="container" id="content">
-        <!-- Home  -->
+       
         <section id="Home" title="Wellcome to longre_academy">
             <div class="Home">
                 <img src="LA-modified.png" alt="school-child">
@@ -107,7 +107,7 @@
 
                 </i>
             </div>
-            <!-- Scroll buttons  -->
+           
             <div class="arrows">
                 <span title="Scroll Up" onclick="scrollWin(0, -600)" tabindex="1" class="up" id="up">&#62;</span>
                 <span Title="Scroll Down" onclick="scrollWin(0, 600)" tabindex="1" class="down" id="down">&#62;</span>
@@ -116,12 +116,11 @@
         <section id="">
             
         </section>
-        <!-- campuse  -->
+      
         <section id="Campuses">
             
         </section>
-        <!-- ------------------------------------------------------------------------------- -->
-        <!-- Admissions -->
+       
         <section id="Admissions">
             <div class="program-header pro Admission">
                 <div class="p-head ">
@@ -151,11 +150,11 @@
             <div class="Admissions-Content Admission">
                 <p></p>
             </div>
-            <!-- Admission-form that display after click on Admissions-Button -->
+           
 
-            <!--form 2 -->
+           
             <div class="Admission-form" id="form-screening"> 
-                <form class="form">
+                <form action="#" class="form">
                     <div class="cross" onclick="ParentAdd()">&#10006;</div>
                     <p class="title">Register </p>
                     <p class="message">
@@ -192,7 +191,7 @@
                         <input required placeholder="" type="address" class="input">
                         <span>Current Address</span>
                     </label>
-                    <!-- Type selction field  -->
+                   
                     <p>
                         <Input type="checkbox"> Terms And Conditions Applied.</Input>
                     </p>
@@ -201,57 +200,57 @@
                     <p class="signin">Already have an acount ? <a onchange="formtext()">Signin</a> </p>
                 </form>
             </div>
-               <!--3rd one form-->
+              
             <div class="Admission-form" id="form-display"> 
-                <form class="form" style="overflow-x: y;">
+                <form action="index.php" method="post" class="form" style="overflow-x: y;">
                     <div class="cross" onclick="HomeTu()">&#10006;</div>
                     <p class="title">Register </p>
                     <p class="message">
                         Join us today and seize the opportunity.</p>
                     <div class="flex">
                         <label>
-                            <input required placeholder="" type="text" class="input">
+                            <input required placeholder="" type="text" class="input" name="name">
                             <span>Your Name</span>
                         </label>
 
                         <label>
-                            <input required placeholder="" type="text" class="input">
+                            <input required placeholder="" type="text" class="input" name="gaurdian">
                             <span>Gaurdian's Name</span>
                         </label>
                     </div>
                     <label>
-                        <input required placeholder="" type="text" class="input">
+                        <input required placeholder="" type="text" class="input" name="experience">
                         <span>Teaching Experience</span>
                     </label>
                     <label>
-                        <input required placeholder="" type="number" class="input">
+                        <input required placeholder="" type="number" class="input" name="phone1">
                             <span>Phone 1 Number</span>
                         </label>
                         <label>
-                            <input required placeholder="" type="number" class="input">
+                            <input required placeholder="" type="number" class="input" name="phone2">
                             <span>phone 2 Number</span>
                         </label>
                     <label>
-                        <input required placeholder="" type="text" class="input">
+                        <input required placeholder="" type="text" class="input" name="caddress">
                         <span>Current Address</span>
                     </label>
 
                     <label>
-                        <input required placeholder="" type="text" class="input">
+                        <input required placeholder="" type="text" class="input" name="paddress">
                         <span>Permanent Address</span>
                     </label>
 
                     <label>
-                        <input required placeholder="" type="text" class="input">
+                        <input required placeholder="" type="text" class="input" name="equalification">
                         <span>Education Qualification</span>
                     </label>
 
                     <label>
-                        <input required placeholder="" type="email" class="input">
+                        <input required placeholder="" type="email" class="input" name="email">
                         <span>Email</span>
                     </label>
-                    <!-- Type selction field  -->
-                    <select id="Form-type-selection" onchange="formtext()">
+                   
+                    <select id="Form-type-selection" onchange="formtext()" name="select1">
                         <option value="">Class You Teach</option>
                         <option value="9th/10th">9th/10th</option>
                         <option value="11th/12th">11th/12th</option>
@@ -263,7 +262,7 @@
                         <option value="SAT">Science</option>
                     </select>
                      
-                    <select id="Form-type-selection" onchange="formtext()">
+                    <select id="Form-type-selection" onchange="formtext()" name="select2">
                         <option value="">Area You Teach</option>
                         <option value="Krishna Park">Krishna Park</option>
                         <option value="#">#</option>
@@ -272,11 +271,11 @@
                     </select>
                     <p>Reference ( Known Person ) :</p>
                     <label>
-                        <input required placeholder="" type="text" class="input">
+                        <input required placeholder="" type="text" class="input" name="person">
                         <span>Person Name</span>
                     </label>
                     <label>
-                        <input required placeholder="" type="text" class="input">
+                        <input required placeholder="" type="text" class="input" name="pnumber">
                         <span>Person Number</span>
                     </label>
                     <p>
@@ -288,8 +287,7 @@
                 </form>
             </div>
         </section>
-        <!-- ------------------------------------------------------------------------------- -->
-        <!-- Contact -->
+       
         <section id="Contact">
             <div class="contact">
                 <div class="get-in-touch  contact-in">
@@ -336,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Footer -->
+            
             <footer>
                 <div class="contact-2">
                     <footer class="footer">
@@ -372,12 +370,12 @@
         </section>
     </div>
 
-    <!-- Messenger Chat Plugin Code -->
+    
     <div id="fb-root" title="Chat With us"></div>
-    <!-- Your Chat Plugin code -->
+   
     <div id="fb-customer-chat" class="fb-customerchat" title="Chat With us by just clicking">
     </div>
-    <!-- js/  -->
+    
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
