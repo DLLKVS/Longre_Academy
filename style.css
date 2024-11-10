@@ -168,8 +168,7 @@ body {
   }
 }
 
-/* ---------------------------------- */
-/* navbar formation */
+
 nav {
   background-color: var(--bg-main-1);
   box-shadow: 0px 26px 43px -3px rgba(0, 0, 0, 0.31);
@@ -292,7 +291,7 @@ nav ul li:nth-of-type(5) a:hover {
 
 }
 
-/* hamburger menu  Formation */
+
 .mainbar {
   display: inline-block;
   cursor: pointer;
@@ -325,8 +324,7 @@ nav ul li:nth-of-type(5) a:hover {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-/* -------------------------------------------- */
-/* pages formation */
+
 .container {
   position: relative;
   display: grid;
@@ -347,8 +345,7 @@ nav ul li:nth-of-type(5) a:hover {
   position: relative;
 }
 
-/* -------------------------------------------- */
-/* Home page */
+
 
 .container section:first-of-type {
   height: 100%;
@@ -528,7 +525,7 @@ h1 {
   color: #fff;
 }
 
-/* Scroll up and down  */
+
 .arrows {
   display: grid;
   gap: 1px;
@@ -571,7 +568,7 @@ h1 {
   border: 1px solid var(--bg-main-3);
 }
 
-/* Social links  */
+
 .social-link {
   position: absolute;
   cursor: pointer;
@@ -667,26 +664,7 @@ h1 {
   }
 }
 
-/* -------------------------------------------------------------------------------- */
-/* Programs section */
 
-
-
-
-
-
-/* --------------------------------------------- */
-/* Campuses section */
-
-
-
-
-  
-
-
-
-/* ------------------------------------------------------------ */
-/* Admssion scetion */
 .container section:nth-of-type(4) {
   display: flex;
   flex-direction: column;
@@ -976,8 +954,7 @@ select {
   color: #30eaae;
 }
 
-/* ------------------------------------------------------- */
-/* Contact Section  */
+
 .container section:nth-of-type(5) {
   background-color: var(--bg-main-4);
   display: flex;
@@ -1349,7 +1326,7 @@ footer {
   }
 }
 
-/* ----------------------------------------------------------- */
+
 .ahkamboh{
   text-decoration: none 1px rgb(2, 3, 3) solid;
 }
@@ -1357,7 +1334,7 @@ footer {
   text-decoration: underline 1px rgb(242, 242, 245) solid;
 }
 
-/* Responsive design For mini screen  */
+
 @media (max-width: 1400px) {
 
   .Home:nth-child(2) .Home-text p {
@@ -1434,7 +1411,7 @@ footer {
   }
 }
 
-/* Responsive design For mobile screen  */
+
 @media (max-width: 1050px) {
 
   ::-webkit-scrollbar {
@@ -1447,7 +1424,7 @@ footer {
 
   }
 
-  /* Nav bar */
+  
   .mainbar {
     display: grid;
   }
@@ -1492,14 +1469,14 @@ footer {
     top: 9px;
   }
 
-  /* page formation */
+ 
    
   .container section {
     padding-top: 0px;
 
   } 
 
-  /* Home page   */
+  
   .Home:nth-child(2) {
     padding: 10%;
   }
@@ -1534,7 +1511,7 @@ footer {
     line-height: 40px;
   }
 
-  /* Scroll button */
+  
   .arrows {
     left: 20px;
     bottom: 20px;
@@ -1777,13 +1754,12 @@ footer {
     bottom: 8px;
   }
 
-  /* page formation 
-   */
+ 
   .container section {
     padding-top: 90px;
   }
 
-  /* hOME PAGE  */
+ 
   .Home:nth-child(2) .Home-text h1 b {
     bottom: 0px;
   }
@@ -1804,4 +1780,3 @@ footer {
   }
 }
 
-/* ----------------------------------------- End------------------------------------------- */
