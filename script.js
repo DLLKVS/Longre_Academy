@@ -14,17 +14,6 @@ home.classList.toggle('white');
 contact.classList.remove('white');
 admission.classList.remove('white');
 }
-Progmbtn=()=>{
-  
-  home.classList.remove('white');
-contact.classList.remove('white');
-admission.classList.remove('white');
-  }
-  Campbtn=()=>{
-    home.classList.remove('white');
-  contact.classList.remove('white');
-  admission.classList.remove('white');
-    }
     Contbtn=()=>{
       contact.classList.toggle('white');
       home.classList.remove('white');
@@ -41,41 +30,31 @@ scrollWin = (x, y) => {
   content.scrollBy(x, y);
 };
 
+const form = document.getElementById('feedback');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
 
-var chatbox = document.getElementById("fb-customer-chat");
-chatbox.setAttribute("page_id", "101421454944610");
-chatbox.setAttribute("attribution", "biz_inbox");
+            const formData = new FormData(form);
+            const url = 'YOUR_WEB_APP_URL_HERE'; // Replace with your web app URL
 
-window.fbAsyncInit = function () {
-  FB.init({
-    xfbml: true,
-    version: "v17.0",
-  });
-};
-
-(function (d, s, id) {
-  var js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-})(document, "script", "facebook-jssdk");
-
-HomeTu = () => {
-  let formdisplay = document.getElementById("form-display");
-  formdisplay.classList.toggle("form-display-done");
-};
-
-ParentAdd = () => {
-  let formdisplay = document.getElementById("form-screening");
-  formdisplay.classList.toggle("form-display-done");
-};
+            fetch(url, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    alert('Form submitted successfully!');
+                    form.reset(); // Reset the form
+                } else {
+                    alert('There was an error submitting the form.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error submitting the form.');
+            });
+        });
 
 
-formtext = () => {
-  let textselect = document.getElementById("Form-type-selection");
-  let submitBtn = document.getElementById("submitBtn");
-  submitBtn.innerText = `Apply in ${textselect.value}`;
-};
+
